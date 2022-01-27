@@ -1,0 +1,84 @@
+{
+  // Vim Configuration
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // file configuration
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "files.insertFinalNewline": true,
+  // Editor Configuration
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": false,
+  "editor.rulers": [
+    100
+  ],
+  // Clang extension configuration
+  "clang-format.executable": "/usr/bin/clang-format-6.0",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  // Git configuration
+  "git.autorefresh": false,
+  // // include path
+  //
+  // CPP
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "${ENV.VCPKG_ROOT}/installed/x64-osx/include/**",
+  ],
+  "C_Cpp.workspaceParsingPriority": "low",
+  "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
+  "gitlens.hovers.currentLine.over": "line",
+  "explorer.confirmDragAndDrop": false,
+  // Gitlens
+  "gitlens.hovers.currentLine.enabled": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "extensions.ignoreRecommendations": true,
+}
